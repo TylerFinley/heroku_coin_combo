@@ -1,9 +1,8 @@
 require('rspec')
 require('coin_combo')
 
-describe('Float#coin_combo') do
-  it('takes one cent and returns one penny') do
-    expect((0.01).coin_combo()).to(eq('penny'))
+describe('Fixnum#coin_combo') do
+  it('takes 150 cents and returns 6 quarters') do
+    expect((150).coin_combo()).to(eq('6 Quarters'))
   end
-
 end
